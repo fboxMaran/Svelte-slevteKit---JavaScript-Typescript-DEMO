@@ -56,6 +56,73 @@ vercel --prod
 
 Cada vez que hagas push a GitHub, Vercel puede desplegar cambios automáticamente.
 
+## Cambiar entre LOCAL y GLOBAL (Vercel)
+
+### 1) LOCAL (solo tu compu)
+
+No necesitas cambiar código para usarla local. Siempre puedes correr:
+
+```sh
+npm install
+npm run dev -- --open
+```
+
+Con eso la app vive en `http://localhost:5173`.
+
+### 2) GLOBAL (internet) con Vercel
+
+Pasos mínimos:
+
+1. Confirma que el proyecto use `@sveltejs/adapter-vercel`.
+2. Sube cambios a GitHub.
+3. Importa el repo en Vercel y deploy.
+4. Comparte tu URL pública (`https://tu-proyecto.vercel.app`).
+
+### 3) Volver de GLOBAL a LOCAL
+
+No hay que deshacer nada. Aunque esté configurada para Vercel, local funciona igual con:
+
+```sh
+npm run dev -- --open
+```
+
+### 4) Cambiar adapter (Vercel <-> Auto) en el futuro
+
+Si un día quieres volver a `adapter-auto`:
+
+```sh
+npm install -D @sveltejs/adapter-auto
+npm uninstall @sveltejs/adapter-vercel
+```
+
+Y en `svelte.config.js`:
+
+```js
+import adapter from '@sveltejs/adapter-auto';
+```
+
+Si luego quieres regresar a Vercel:
+
+```sh
+npm install -D @sveltejs/adapter-vercel
+npm uninstall @sveltejs/adapter-auto
+```
+
+Y en `svelte.config.js`:
+
+```js
+import adapter from '@sveltejs/adapter-vercel';
+```
+
+### 5) Verificación rápida después de cualquier cambio
+
+```sh
+npm run check
+npm run build
+```
+
+Si ambos comandos pasan, estás listo para local y para deploy.
+
 ## Objetivo didáctico sugerido
 
 Usar esta demo como portada de la clase y luego pedir a los estudiantes que:
