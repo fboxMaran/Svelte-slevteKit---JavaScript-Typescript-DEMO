@@ -1,10 +1,20 @@
 <header>
 	<div class="brand">
 		<p class="title">SvelteKit Live Demo</p>
-		<p class="subtitle">Clase de Programación · JavaScript + TypeScript</p>
+		<p class="subtitle">Clase de Lenguajes con el Profe Brayitan · JavaScript + TypeScript · Angélica Cabrera y Marlon Badilla</p>
 	</div>
 
-	<a class="docs" href="https://svelte.dev/docs/kit">Documentación</a>
+	<div class="header-actions">
+		<a class="docs" href="https://svelte.dev/docs/kit">Documentación</a>
+		<a
+			class="docs"
+			href="https://github.com/fboxMaran/Svelte-slevteKit---JavaScript-Typescript-DEMO"
+			target="_blank"
+			rel="noopener noreferrer"
+		>
+			Git Repo
+		</a>
+	</div>
 </header>
 
 <style>
@@ -29,6 +39,13 @@
 	.subtitle {
 		font-size: 0.85rem;
 		color: rgb(15 23 42 / 76%);
+	}
+
+	.header-actions {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		flex-shrink: 0;
 	}
 
 	.docs {

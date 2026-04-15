@@ -50,14 +50,14 @@ function sumar(): void {
 
 <section class="hero">
 	<p class="tag">Clase demo • Svelte + SvelteKit</p>
-	<h1>Una clase de programación visual, moderna y participativa</h1>
+	<h1>Una clase de Lenguajes de Programación, interactiva, alegre y participativa</h1>
 	<p class="lead">
-		Interfaz rápida, reactividad en tiempo real y experiencia que engancha desde el minuto uno.
+		Interfaz que une a estudiantes y profesor. Rápida, reactividad en tiempo real.
 	</p>
 
 	<div class="cta-row">
-		<button class="btn primary" onclick={agregarParticipante}>+1 estudiante activo</button>
-		<button class="btn ghost" onclick={sumarAplauso}>👏 Subir energía</button>
+		<button class="btn primary" onclick={agregarParticipante}>+1 ✋ Manito arriba </button>
+		<button class="btn ghost" onclick={sumarAplauso}>+1 👏 Aplauso Subir energía</button>
 	</div>
 </section>
 

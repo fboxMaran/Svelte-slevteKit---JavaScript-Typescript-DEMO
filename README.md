@@ -125,7 +125,7 @@ Si ambos comandos pasan, estás listo para local y para deploy.
 
 ## Objetivo didáctico sugerido
 
-Usar esta demo como portada de la clase y luego pedir a los estudiantes que:
+Usar esta demo como inicio y luego pedir que:
 
 1. Agreguen una nueva métrica al panel.
 2. Modifiquen la agenda con su propio plan.
