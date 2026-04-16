@@ -13,7 +13,7 @@
 	</main>
 
 	<footer>
-		<p>Demo creada con SvelteKit para motivar a estudiantes a programar.</p>
+		<p>Demo creada con SvelteKit, en un futuro se plantea persistencia de datos en la nube, para todos los usuarios.</p>
 	</footer>
 </div>
 

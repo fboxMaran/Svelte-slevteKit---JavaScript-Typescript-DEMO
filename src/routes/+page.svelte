@@ -105,7 +105,7 @@ function sumar(): void {
 </section>
 
 <section class="panel agenda">
-	<h2>Estructura de la sesión (65 min)</h2>
+	<h2>Estructura de la sesión (65 min) Para un posible taller</h2>
 	<div class="timeline">
 		{#each agenda as item}
 			<div class="step">
